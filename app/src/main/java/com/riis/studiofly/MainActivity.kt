@@ -81,6 +81,11 @@ class MainActivity : AppCompatActivity() {
             // start your next activity
             startActivity(intent)
         }
+        val mainMenuButtontoSendDataToGoogleSheets = findViewById<Button>(R.id.button_to_send_data_to_google_sheets)
+        mainMenuButtontoSendDataToGoogleSheets.setOnClickListener {
+            val intent = Intent(this, SendDataToGoogleSheets::class.java)
+            startActivity(intent)
+        }
     }
 
     /**
